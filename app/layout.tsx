@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Figtree } from "next/font/google";
 
 // components
 import "./globals.css";
@@ -15,9 +15,8 @@ export const metadata: Metadata = {
 };
 
 // poppins font
-const poppins = Poppins({
+const fontFigtree = Figtree({
   subsets: ["latin"],
-  weight: "400",
 });
 
 export default function RootLayout({
@@ -27,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={fontFigtree.className}>
         <Navbar />
         {children}
       </body>
