@@ -4,6 +4,7 @@ import { Figtree } from "next/font/google";
 // components
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
+import Modal from "./components/Modals/Modal";
 
 // meta tags
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={fontFigtree.className}>
+        <Modal isOpen title="Hello Vaibhaw" actionLabel="Submit" />
         <Navbar />
         {children}
       </body>

@@ -2,6 +2,9 @@
 
 import { FaSearch } from "react-icons/fa";
 
+// components
+import IconButton from "../UIElements/Buttons/IconButton";
+
 const Search = () => {
   return (
     <div className="border-[1px] w-full md:w-auto py-2 rounded-full shadow-md hover:shadow-lg transition cursor-pointer">
@@ -15,10 +18,11 @@ const Search = () => {
 
         {/* guests & search icon */}
         <div className="pl-5 pr-3 text-gray-600 flex flex-row items-center gap-3">
-          <p className="hidden text-sm md:block">Add guests</p>
-          <div className="p-2.5 bg-rose-500 rounded-full text-white">
-            <FaSearch size={12} />
-          </div>
+          <button className="hidden text-sm md:block">Add guests</button>
+
+          <IconButton>
+            <FaSearch size={12} className="text-white" />
+          </IconButton>
         </div>
       </div>
     </div>
