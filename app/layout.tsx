@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={fontFigtree.className}>
-        <Modal isOpen title="Hello Vaibhaw" actionLabel="Submit" />
+        {/* <Modal isOpen title="Hello Vaibhaw" actionLabel="Submit" /> */}
         <Navbar />
         {children}
       </body>
